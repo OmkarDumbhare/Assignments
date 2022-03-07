@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+
+<body>
+    <script>
+        function coinFlip() {
+            return (Math.random() < 0.3) ? 'Heads' : 'Tails';
+        }
+
+        var howManyTimes = prompt("Enter a head ratio: ");
+
+        //takes number of flips as parameter
+        var countHeads = 0;
+        for (var i = 0; i < howManyTimes; i++) {
+            if (coinFlip() === 'Heads') {
+                countHeads++;
+            }
+        }
+
+        alert("Heads appear " + (countHeads / howManyTimes) + "in fraction");
+    </script>
+</body>
+
+</html>
