@@ -1,0 +1,17 @@
+*{
+    margin: 20px;
+    font-weight: 100;
+}
+
+.heading{
+    background: powderblue;
+    padding: 10px ;
+}
+
+.heading h2{
+    text-decoration: line-through;
+}
+
+.heading h3{
+    text-decoration: underline;
+}

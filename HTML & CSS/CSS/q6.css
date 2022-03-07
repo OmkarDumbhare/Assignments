@@ -1,0 +1,14 @@
+        table,
+        th,
+        td {
+            border: 2px solid;
+        }
+        
+        th{
+            background-color: green;
+            color: whitesmoke;
+        }
+        
+        table,td{
+            border: 2px solid green;
+        }

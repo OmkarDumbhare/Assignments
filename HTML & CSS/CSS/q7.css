@@ -1,0 +1,16 @@
+.container {
+    border: 1px solid;
+    padding: 5px;
+    width: fit-content;
+}
+
+
+p span{
+    font-weight: bold;
+}
+
+p{
+        border: 2px solid red;
+        outline-style: dotted;
+        outline-color: lightgreen;    
+}

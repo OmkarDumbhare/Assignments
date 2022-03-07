@@ -1,0 +1,26 @@
+*{
+    font-weight: 100;
+    
+}
+.container{
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: steelblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.p2{
+    background-color: aqua;
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.p1{
+    background-color: rgb(179, 173, 173);
+    padding: 20px;
+}
