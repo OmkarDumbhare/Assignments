@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1Q6</title>
+</head>
+
+<body>
+    <script>
+        
+        function makeStarBox(arr) {
+            const longest = arr.reduce((a, b) => a.length <= b.length ? b : a);
+            const box_width = longest.length + 2;
+
+            console.log("*".repeat(box_width));
+
+            arr.map(str => console.log("*" + str + " ".repeat(box_width - (str.length + 2)) + "*"));
+
+            console.log("*".repeat(box_width));
+            console.log(makeStarBox(['Hello','World', 'in', 'a', 'frame']));
+        }
+    </script>
+</body>
+
+</html>

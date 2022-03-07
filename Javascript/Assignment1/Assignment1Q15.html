@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1Q15</title>
+</head>
+
+<body>
+    <script>
+        var arr = [];
+        for (var i = 0, t = 20; i < t; i++) {
+            arr.push(Math.round(Math.random() * t))
+        }
+        console.log(arr);
+        
+        document.write("Array elemnts are: [ " + arr +" ]"+ "<br>")
+        
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    var temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+       document.write("<br>"+"The Sorted Array: [ " + arr + " ]");
+
+    </script>
+</body>
+
+</html>

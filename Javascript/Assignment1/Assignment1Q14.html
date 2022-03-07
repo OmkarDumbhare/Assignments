@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1Q14</title>
+</head>
+<body>
+    <script>
+
+var arr1 = [];
+for (var i=0, t=100; i<t; i++) {
+    arr1.push(Math.round(Math.random() * t))
+}
+console.log(arr1);
+
+document.write("Largest no among the 100 is:",Math.max(...arr1)+"<br>");
+document.write("Smallest no among the 100 is:",Math.min(...arr1)+"<br>");
+var count_odd =0;
+var count_even = 0;
+for(var i = 0; i < 101; i++)
+{
+    if(arr1[i] % 2 == 0)
+    {
+        count_even++;
+    }
+
+else
+    {
+        count_odd++;
+    }
+}
+document.write("Odd count is:" + count_odd+"<br>");
+document.write("Even count is:" + count_even+"<br>");
+
+sum1=0;
+for(i=0;i<arr1.length;i++)
+{
+    sum1=sum1+arr1[i];
+
+}
+
+document.write("sum is:"+sum1+"<br>");
+
+var average=sum1/arr1.length;
+document.write("average is:"+average);
+    </script>
+</body>
+</html>

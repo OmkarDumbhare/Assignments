@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1Q13</title>
+</head>
+<body>
+    <script>
+var arr=[5,7,11,90,56]
+
+//For Loop
+function for_loop()
+{
+    var sum1=0;
+    for(var i=0;i<arr.length;i++)
+    {
+        sum1=sum1+arr[i];
+    }
+    document.write("sum of an array using for loop is:"+sum1+"<br>");
+}
+for_loop();
+
+//While Loop
+function while_loop()
+{
+    var sum2=0;
+    var i=0;
+    while(i<arr.length)
+    {
+        sum2=sum2+arr[i];
+        i++;
+    }
+    document.write("sum of an array using while loop is:"+sum2+"<br>");
+}
+while_loop();
+
+//Do-While Loop
+var i = 0;
+var sum3 = 0;
+
+do {
+  sum3 =sum3 + arr[i];  ;
+  i++;
+}
+while (i < arr.length);  
+
+document.write("sum of an array using do-while loop is:"+sum3+"<br>");
+
+    </script>
+</body>
+</html>
